@@ -1,0 +1,479 @@
+body
+{
+	background-color: #eee;
+	font-family: 'Rubik', sans-serif;
+}
+
+i
+{
+	text-shadow: none;
+}
+
+h2
+{
+	color: #555;
+}
+
+p.error, p.success
+{
+	border-radius: 4px;
+	background-color: #F38484;
+	/*width: 244px;*/
+	width: 100%;
+	margin: 5px 0 0 0;
+	color: #222;
+	padding: 3px;
+}
+
+p.success
+{
+	background-color: #A0DF81;
+	margin: 0px 0px 5px 0px;
+}
+
+#log, #reg
+{
+	margin: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 10px;
+	float: left;
+	width: 264px;
+}
+
+article
+{
+	margin: 10px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+select
+{
+	margin-bottom: 5px;
+	max-width: 500px;
+}
+
+div.reg-log
+{
+	width: 608px;
+	margin: auto;
+}
+
+@media all and (max-width:608px)
+{
+	div.reg-log
+	{
+		width: 304px;
+	}
+}
+
+input[type="submit"]
+{
+	background-color: #CCC;
+	/*color: #FFE;*/
+	color: #555;
+	border-color: #CCC;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #AAA;
+}
+
+label
+{
+	font-weight: bold;
+	display: block;
+	margin: 8px 5px 0 0;
+	text-shadow: none;
+}
+
+footer, header
+{
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 7px;
+	background-color: #456987;
+	font-size: 16px;
+	text-align: center;
+	color: #f0f0f0;
+	border-radius: 4px;
+}
+
+@media all and (min-width:1008px)
+{
+	#galeria, .page
+	{
+		width: 936px;
+	}
+}
+@media all and (min-width:822px) and (max-width:1008px)
+{
+	#galeria, .page
+	{
+		width: 750px;
+	}
+}
+@media all and (min-width:636px) and (max-width:822px)
+{
+	#galeria, .page
+	{
+		width: 564px;
+	}
+}
+@media all and (min-width:450px) and (max-width:636px)
+{
+	#galeria, .page
+	{
+		width: 378px;
+	}
+}
+@media all and (max-width:450px)
+{
+	#galeria, .page
+	{
+		width: 192px;
+	}
+}
+
+/* MINIATURY */
+#galeria
+{ 
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 3px 3px 3px 3px;
+	position: relative;
+}
+
+div.dymek
+{
+	float: left;
+	position: relative;
+}
+
+div.dymek > a > span
+{
+	display: none;
+	border-radius: 4px;
+	width: 180px;
+	height: 180px;
+	top: 3px;
+	left: 3px;
+	background: rgba(69, 105, 135, 0.6);
+	position: absolute;
+}
+
+div.dymek > a > span > div 
+{
+	color: white;
+	text-align: center;
+	word-wrap: break-word;
+	font-size: 15px;
+	display: inline-flex;
+	margin:auto;
+	position: relative;
+	align-items: center;
+	height: 100%;
+}
+
+div.dymek > a > span > div > p
+{
+	width: 180px;
+	text-shadow: 1px 1px 2px #333;
+}
+
+div.dymek:hover > a > span
+{ 
+	display: block;
+}
+
+.miniatura
+{
+	margin: 3px;
+	border-radius: 4px;
+	float: left;
+}
+/* KONIEC */
+
+/* PRZYCISKI SORTOWANIA*/
+.page
+{
+	margin: auto;
+}
+
+.sort-label
+{
+	float: left;
+}
+
+.button
+{
+	background-color:#4E7698;
+	padding: 0.3em 1em 0.3em 1em;
+	margin: 3px;
+	border-radius: 4px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: #EFF;
+	text-shadow: 1px 1px 2px #333;
+}
+
+.button:hover
+{
+	background-color: #4E986F;
+}
+
+.button:active
+{
+	background-color: #4E4444;
+}
+/* KONIEC */
+
+/* NAV */
+nav > a.button
+{
+	padding: 0.3em 8px 0.3em 8px; 
+	margin: 2px;
+	float: left;
+	cursor: pointer;
+	width: 190px;
+}
+
+nav > a > i.fa
+{
+	font-size: 120%;
+	color: rgba(255,255,255,0.5);	
+}
+
+a.powrot > .fa.fa-arrow-circle-o-left
+{
+	display: none;
+}
+/* KONIEC */
+
+/*POWROT*/
+a.powrot
+{
+	margin: 4px;
+	text-decoration: none;
+	color: #456987;
+	display: inline-block;
+}
+
+a.powrot > .fa.fa-arrow-circle-o-left
+{
+	display: none;
+}
+
+a.powrot:hover
+{
+	color: #4E986F;
+}
+
+a.powrot:hover > .fa.fa-arrow-circle-o-left
+{
+	display: inline-block;
+}
+
+a.powrot:hover > .fa.fa-arrow-circle-left
+{
+	display: none;
+}
+
+a.powrot.button
+{
+	color: #EFF;
+}
+
+a.powrot.button:hover
+{
+	color: #EFF;
+}
+/* KONIEC */
+
+p.label
+{
+	text-align: center;
+	float: left;
+}
+
+.form-control.folder
+{
+	width: 400px;
+	overflow:hidden;
+}
+
+div.form-control.folder
+{
+	padding: 0px;
+}
+
+div.input-group.folder
+{
+	margin: 5px 0 5px 0;
+}
+
+.form-control.folder.light:hover {
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6)
+}
+
+#input_file
+{
+	/*opacity:0;*/
+	padding: 5px;
+	text-align: center;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+
+	background svg css:
+	{
+		https://css-tricks.com/using-svg/
+		
+		https://codepen.io/netsi1964/pen/HGJms
+	}
+
+	zmiana wyglady input file
+	{
+
+	}
+	*/
+}
+
+div.foto, div.kom, div.komt
+{
+	text-align: center;
+	max-width: 1220px;
+	max-height: 1220px;
+	min-width: 360px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.foto > h3
+{
+	margin-top: 0px;
+}
+
+div.kom, div.komt
+{
+	min-width: 340px;
+	padding: 4px;
+}
+
+div.komt
+{
+	min-width: 332px;
+	margin-top: 4px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+div.foto > form > label
+{
+	margin: 3px;
+}
+
+nav.subNav
+{
+	/*display: inline-block;*/
+}
+
+.green
+{
+	background-color: #4E986F;
+}
+
+textarea
+{
+	border-radius: 5px;
+}
+
+
+
+
+/*Fade in, fade out
+transition: color .3s;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+
+
+
+
+
+
+
+
+
+/*
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+/*.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    font-family: FontAwesome;
+    content: '\f006';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
